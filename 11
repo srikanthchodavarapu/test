@@ -54,7 +54,7 @@ Solution 2: In Javascript
 // Returns position of survivor among
 // a circle of n persons and every
 // second person being killed
-function josephus(n)
+function FindPersons(n)
 {
      
     // Find value of 2 ^ (1 + floor(Log n))
