@@ -4,6 +4,8 @@ Hi
 test
 srikanth
 ============================
+Solution 1 :
+
 int main()
 {
  
@@ -45,3 +47,26 @@ int main()
  
     return 0;
 }
+
++++++++++++++++++++++++++++++++
+Solution 2: In Javascript
+
+// Returns position of survivor among
+// a circle of n persons and every
+// second person being killed
+function josephus(n)
+{
+     
+    // Find value of 2 ^ (1 + floor(Log n))
+    // which is a power of 2 whose value
+    // is just above n.
+    let p = 1;
+     
+    while (p <= n)
+        p *= 2;
+ 
+    // Return 2n - 2^(1+floor(Logn)) + 1
+    return (2 * n) - p + 1;
+}
+
+
